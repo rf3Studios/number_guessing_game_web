@@ -1,0 +1,116 @@
+/*!
+ * Number Guessing Game
+ * https://github.com/rf3Studios/number_guessing_game_web
+ *
+ * Copyright 2014 Rich Friedel
+ * Released under the MIT license
+ */
+
+/* Typography */
+html {
+    font-family : Arial, Helvetica, sans-serif;
+    font-size   : 62.5%;
+    line-height : 62.5%;
+}
+
+body, h3, legend, input {
+    font-size   : 1.6rem;
+    line-height : 1.6rem;
+}
+
+h1 {
+    font-size   : 2.8rem;
+    line-height : 3.5rem;
+}
+
+h2 {
+    font-size   : 2rem;
+    line-height : 3rem;
+}
+
+legend {
+    font-weight : bold;
+}
+
+p, label {
+    font-size   : 1.5rem;
+    line-height : 2rem;
+}
+
+/* Layout */
+body {
+    min-width : 1000px;
+}
+
+h1, h2, h3, p {
+    margin : 8px;
+}
+
+#game-wrapper {
+    width       : 750px;
+    margin      : 0 auto;
+    text-align  : center;
+    padding-top : 10px;
+}
+
+fieldset#num-entry, #num-content {
+    background-color : #e4e4e4;
+    padding          : 8px;
+    margin           : 20px auto 24px;
+    border           : 2px solid #cccccc;
+    border-radius    : 0 25px 0 25px;
+    max-width        : 400px;
+}
+
+fieldset#num-entry legend {
+    background-color : #fefefe;
+    border           : 1px solid #dddddd;
+    box-shadow       : 3px 3px 5px rgba(50, 50, 50, 0.25);
+    float            : left;
+    clear            : both;
+    margin-top       : -20px;
+    margin-bottom    : 8px;
+    padding          : 4px;
+}
+
+fieldset#num-entry label {
+    margin : 2px 10px 2px 10px;
+    float  : right;
+    clear  : both;
+}
+
+#num-content {
+    max-width : 750px;
+}
+
+#num-quest-btn-wrapper {
+    background-color : #fefefe;
+    border           : 1px solid #dddddd;
+    box-shadow       : 3px 3px 5px rgba(50, 50, 50, 0.25);
+    width            : 200px;
+    margin           : 0 auto;
+    padding          : 8px;
+    overflow         : hidden;
+}
+
+#ready-btn, #yes-btn, #no-btn, #higher-btn, #lower-btn, #reset-btn {
+    padding : 10px 20px;
+}
+
+#ready-btn, #reset-btn {
+    margin : 0 auto;
+}
+
+#yes-btn, #higher-btn {
+    float : left;
+    clear : both;
+}
+
+#no-btn, #lower-btn {
+    float : right;
+}
+
+#num-content, #num-guess-confirm, #num-question, #num-quest-btn-wrapper,
+#num-guess-success, #higher-btn, #lower-btn, #reset-btn {
+    display : none;
+}
